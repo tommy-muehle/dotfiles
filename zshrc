@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=7
-export EDITOR='vim'
+export EDITOR=$(which vim)
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
