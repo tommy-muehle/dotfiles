@@ -10,6 +10,7 @@ brew 'graphviz'
 brew 'go'
 brew 'highlight'
 brew 'phive'
+brew 'pinentry-mac'
 brew 'vim', args: ['--override-system-vi']
 brew 'watch'
 brew 'zsh'
