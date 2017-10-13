@@ -4,6 +4,7 @@ brew 'autoconf'
 brew 'curl', args: ['with-openssl']
 brew 'ctop'
 brew 'exa'
+brew 'fd'
 brew 'git'
 brew 'gnupg'
 brew 'graphviz'
