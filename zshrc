@@ -26,6 +26,7 @@ alias dm='docker-machine'
 alias dc='docker-compose'
 alias phpstan='docker run -v $PWD:/app --rm phpstan/phpstan'
 alias phpmd='docker run -v $PWD:/app --rm dockerizedphp/phpmd'
+alias cat='bat'
 
 # Custom
 source $ZSH/oh-my-zsh.sh
