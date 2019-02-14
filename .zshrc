@@ -1,6 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=7
 export EDITOR=$(which vim)
+export GOPATH=$HOME/Projects/Go
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -18,15 +19,12 @@ HIST_STAMPS="dd.mm.yyyy"
 HIST_IGNORE_SPACE="true"
 
 # Load ZSH plugins
-plugins=(git vagrant docker osx brew docker-compose github go z)
+plugins=(git osx vagrant composer colorize docker docker-compose z go kubectl heroku)
 
 # Aliases
-alias la="exa -abghl --git --color=automatic"
-alias dm='docker-machine'
-alias dc='docker-compose'
-alias phpstan='docker run -v $PWD:/app --rm phpstan/phpstan'
-alias phpmd='docker run -v $PWD:/app --rm dockerizedphp/phpmd'
-alias cat='bat'
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
 
 # Custom
 source $ZSH/oh-my-zsh.sh
@@ -45,4 +43,9 @@ fi
 
 if [ -x "$(command -v kubectl)" ]; then
     source <(kubectl completion zsh)
+fi
+
+# Special device settings
+if [ -f ~/.extra ]; then
+    source ~/.extra
 fi

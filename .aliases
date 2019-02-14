@@ -1,0 +1,18 @@
+# Common
+alias ..='cd ..'
+alias ....='cd ../..'
+alias la="exa -abghl --git --color=automatic"
+alias cat='bat'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Docker
+alias dm='docker-machine'
+alias dc='docker-compose'
+
+# Kubernetes
+alias kgp='kubectl get pods'
+
+# PHP tools
+alias phpstan='docker run --rm -v $PWD:/app phpstan/phpstan'
+alias phpmnd='docker run --rm -v $PWD:/app dockerizedphp/phpmnd'
