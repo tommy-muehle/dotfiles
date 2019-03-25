@@ -16,3 +16,4 @@ alias kgp='kubectl get pods'
 # PHP tools
 alias phpstan='docker run --rm -v $PWD:/app phpstan/phpstan'
 alias phpmnd='docker run --rm -v $PWD:/app dockerizedphp/phpmnd'
+alias ecs='docker run --rm -ti -v $PWD:/app dockerizedphp/ecs:latest'

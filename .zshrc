@@ -1,9 +1,13 @@
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
 export ZSH="$HOME/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=7
 export EDITOR=$(which vim)
 export GOPATH=$HOME/Projects/Go
 
+# Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
+export POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="false"
@@ -19,7 +23,7 @@ HIST_STAMPS="dd.mm.yyyy"
 HIST_IGNORE_SPACE="true"
 
 # Load ZSH plugins
-plugins=(git osx vagrant composer colorize docker docker-compose z go kubectl heroku)
+plugins=(brew colorize docker docker-compose dotenv git github golang kubectl osx vagrant z zsh-completions)
 
 # Aliases
 if [ -f ~/.aliases ]; then

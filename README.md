@@ -3,7 +3,7 @@
 ## ZSH
 
 ```
-ln -snf zshrc $HOME/.zshrc
+ln -snf $PWD/.zshrc $HOME/.zshrc
 ```
 
 ## Homebrew
@@ -15,5 +15,5 @@ brew bundle
 ## vim
 
 ```
-ln -snf vimrc $HOME/.vimrc
+ln -snf $PWD/.vimrc $HOME/.vimrc
 ```
