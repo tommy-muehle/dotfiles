@@ -1,0 +1,20 @@
+# Needs to be included in the main .gitconfig
+
+[user]
+    name = Tommy Muehle
+    email = tommy.muehle@gmail.com
+
+[gpg]
+    program = gpg
+
+[commit]
+    gpgsign = true
+
+[github]
+    user = tommy-muehle
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+
+[alias]
+    please = push --force-with-lease
